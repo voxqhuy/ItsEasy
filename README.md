@@ -4,8 +4,8 @@
 + Navigation
 ./Documents
 ../../
-
-Ctrl + c 
+```
+Ctrl + c  
       universal Cancel
 Ls [options] [location]
       list items
@@ -80,3 +80,4 @@ ZZ
       save file but don't exit
 :wq
       again, save and exit
+```
