@@ -1,10 +1,12 @@
 # ItsEasy
 
+# **Linux**
+```
 1. Commands:
 + Navigation
 ./Documents
 ../../
-```
+
 Ctrl + c  
       universal Cancel
 Ls [options] [location]
