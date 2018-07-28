@@ -1,4 +1,4 @@
-# ItsEasy
+This is a collection of quick tutorials for popular developers' tools
 
 # **Linux**
 ```
