@@ -23,10 +23,20 @@ man <command>
       manuals
 man -k <search term> 
       search for all manual pages containing the given search term
+'/' <search term> enter
+      search; 'n' for next 
+*     
+      represents zero or more characters. Ex: ls b* => barry.txt blah.txt bob
+? 
+      represents a single character.      Ex: ls ?i* => firstfile video.mpeg
+[] 
+      represents a range of characters.   Ex: ls [sv]* => secondfile video.mpeg; ls *[0-9]* => foo1 foo2 foo3
+Right mouse click
+      paste
 'q' 
       quit
-'/' <search term> enter
-       search, 'n' for next 
+
+
 
 + File manipulation
 mkdir [options] <Directory> 
@@ -55,7 +65,7 @@ mv [options] <source> <destination>
 
 
 2. Rules:
-Case sensitive. No Undo. Tab for suggesting. 
+Case sensitive. No Undo. Tab for suggesting. No mouse.
 Space
       'Holiday Photos' or Holiday\ Photos
 Hidden 
@@ -84,6 +94,22 @@ ZZ
       save file but don't exit
 :wq
       again, save and exit
+x
+      delete a character
+dd
+      delete a line
+u
+      undo (keep pressing to keep undoing)
+U
+      undo all changes
+      
+++ Navigating in Vi: (Type **:set nu** in edit mode to enable line numbers)
+Arrow keys - move the cursor around
+^ (caret) - move cursor to beginning of current line
+$ - move cursor to end of the current line
+{ - move backward one paragraph
+} - move forward one paragraph
+
 ```
 
 
@@ -97,7 +123,7 @@ abc…	Letters
 .	Any Character
 \.	Period
 [abc]	Only a, b, or c
-[^abc]	Not a, b, nor c
+[^abc]Not a, b, nor c
 [a-z]	Characters a to z
 [0-9]	Numbers 0 to 9
 \w	Any Alphanumeric character
@@ -111,7 +137,7 @@ abc…	Letters
 \S	Any Non-whitespace character
 ^…$	Starts and ends
 (…)	Capture Group
-(a(bc))	Capture Sub-group
+(a(bc)) Capture Sub-group
 (.*)	Capture all
-(abc|def)	Matches abc or def
+(abc|def) Matches abc or def
 ```
