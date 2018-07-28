@@ -1,5 +1,5 @@
-This is my collection of quick tutorials for popular developers' tools.
-I personally edit and summarize to keep the content as concise as possible.
+This is my collection of quick tutorials for popular developers' tools.  
+I personally edit and summarize to keep the content as concise as possible. (Suggestions are appreicated)
 
 # **Linux**
 ```
