@@ -11,84 +11,202 @@ I personally edit and summarize to keep the content as concise as possible.
 - [Regex](#regex)
 
 ## Linux
+
+
+### Basic
+
+* Navigation
 ```
-1. Commands:
-+ Navigation
 ./Documents
 ../../
+```
 
-Ctrl + c  
-      universal Cancel
-Ls [options] [location]
-      list items
+* Universal Cancel  
+**Ctrl + c**   
+
+* List items
+```
+ls [options] [location]
+```
+
+* Print working directory
+```
 pwd 
-      print working directory
+```
+
+* Change Directories 
+```
 cd 
-      Change Directories 
+```
+* Check a file's type
+```
 File [path] 
-      what type it is
+```
+
+* Read manuals of a command
+```
 man <command>
-      manuals
+```
+
+* Search for all manual pages containing the given search term
+```
 man -k <search term> 
-      search for all manual pages containing the given search term
+```
+    
+* Search
+```
 '/' <search term> enter
-      search; 'n' for next 
-*     
-      represents zero or more characters. Ex: ls b* => barry.txt blah.txt bob
-? 
-      represents a single character.      Ex: ls ?i* => firstfile video.mpeg
-[] 
-      represents a range of characters.   Ex: ls [sv]* => secondfile video.mpeg; ls *[0-9]* => foo1 foo2 foo3
-Right mouse click
-      paste
-'q' 
-      quit
+```
+Pres key **n** for search next  
 
-
-
-+ File manipulation
-mkdir [options] <Directory> 
-      Creating a directory
-rmdir [options] <Directory> 
-      remove directory
-'-p' 
-      make parent directories as needed. 'mkdir -p test/butt'
-'-v'
-      it is doing. 'mkdir -pv test3/butt'
-rm [options] <file> 
-      remove a file
-rm -r <directory> 
-      Removing non empty Directories
-
-touch [options] <filename>
-      Creating a Blank File
-cp [options] <source> <destination> 
-      Copying a File 
-(If the destination is to a file, it will create a copy of the source but name the copy the filename specified in destination. If we provide a directory as the destination then it will copy the file into that directory and the copy will have the same name as the source.)
-cp -r <source> <destination> 
-      Copying a Dir
-mv [options] <source> <destination>
-(mv foo2 backups/foo3 = We moved the directory foo2 into the directory backups and renamed it as foo3)
-(mv barney backups/ = We moved the file barney into backups. As we did not provide a destination name, it kept the same name.)
-
-2. Permission
-ls -l [path]
-      To view permissions for a file we use the long listing option for the command ls
-Ex:   
-drwxr-xr-x 1 voxqhuy voxqhuy 512 Jul 28 01:16 voxqhuy
+* Paste something  
+**Right mouse click**
       
-3. Rules:
-Case sensitive. No Undo. Tab for suggesting. No mouse.
-Space
-      'Holiday Photos' or Holiday\ Photos
-Hidden 
-      '.'   .file.txt  => to show hidden files: ls -a
-shorthand
-      ls -a,  ls -alh(combined)
-longhand
-      ls --all
+* Quit  
+Key **q**
+    
+* Others
 
-4. Vi Text Editor
+Asterisk **\***  represents zero or more characters. 
+Example: 
+```
+ls b*
+barry.txt blah.txt bob  
+```
+
+Question mark **\?**  represents a single character.      
+Example: 
+```
+ls ?i* 
+firstfile video.mpeg  
+```
+
+Brackets **[]**   represents a range of characters.   
+Example: 
+```
+ls [sv]*  
+secondfile video.mpeg
+ls *[0-9]* 
+foo1 foo2 foo3  
+```
+
+
+### File manipulation
+
+* Creating a directory
+```
+mkdir [options] <Directory> 
+```
+ 
+* Remove directory
+```
+rmdir [options] <Directory> 
+```
+ 
+Options: 
+Make parent directories as needed  
+```
+-p
+```
+Example:  
+```
+mkdir -p abc/hello
+```
+This will create a folder 'abc' and then the file 'hello'  
+
+
+Show what the command is doing
+```
+-v
+```
+Example:
+```
+mkdir -pv voxqhuy/foo
+mkdir: created directory 'voxqhuy/foo'
+```
+
+* Remove a file
+```
+rm [options] <file> 
+```
+    
+* Removing non empty Directories
+```
+rm -r <directory> 
+```
+      
+* Creating a Blank File
+```
+touch [options] <filename>
+```
+ 
+* Copying a File 
+```
+cp [options] <source> <destination> 
+```
+If the destination is to a file, it will create a copy of the source but name the copy the filename specified in destination. If we provide a directory as the destination then it will copy the file into that directory and the copy will have the same name as the source.
+
+* Copying a Directory
+```
+cp -r <source> <destination> 
+```
+**-r** is short for **recursive**  
+
+* Move a file or a directory
+```
+mv [options] <source> <destination>
+```
+Example:  
+```
+mv foo2 backups/foo3
+```
+We moved the directory foo2 into the directory backups and renamed it as foo3
+```
+mv barney backups/
+```
+We moved the file barney into backups. As we did not provide a destination name, it kept the same name.
+
+
+### Permission
+
+* To view permissions for a file we use the long listing option **-l** for the command ls
+```
+ls -l [path]
+drwxr-xr-x 1 voxqhuy voxqhuy 512 Jul 28 01:16 voxqhuy
+```
+      
+### General rules:
+
+Case sensitive. No Undo. Tab for suggesting. No mouse.
+* File names with spaces  
+```
+Holiday Photos
+```
+Use 'Holiday Photos' or Holiday\ Photos
+
+* Hidden files  
+The dot **'.'**   
+```
+.file.txt
+```
+To show hidden files: Use **-a** (stands for 'all')
+```
+ls -a
+```
+
+* Shorthand commands
+```
+ls -a  
+ls -alh(combined)
+```
+
+* Longhand commands
+```
+ls --all
+```
+
+
+### Vi Text Editor
 vi <file>
       start vi
 cat <file>
@@ -123,10 +241,10 @@ $ - move cursor to end of the current line
 { - move backward one paragraph
 } - move forward one paragraph
 
-```
 
 
-# **Regex**
+
+## Regex
 
 ```
 abc…	Letters
@@ -154,3 +272,8 @@ abc…	Letters
 (.*)	Capture all
 (abc|def) Matches abc or def
 ```
+
+## References
+
+* [Ryans Tutorials](https://ryanstutorials.net/linuxtutorial/)
+* [RegexOne](https://regexone.com//)
