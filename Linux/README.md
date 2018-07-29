@@ -1,15 +1,3 @@
-# Fast Tutorials for ... everything
-
-###### Favored audience: sexy Geeks
-This is my collection of quick tutorials for popular developers' tools.  
-I personally edit and summarize to keep the content as concise as possible.  
-*(**Suggestions** are appreciated; **contributions** are more than welcomed)*
-
-## Table of Contents
-
-- [Linux](#linux)
-- [Regex](#regex)
-
 # Linux
 
 
@@ -457,38 +445,3 @@ chmod 240 frog.png
 ls -l frog.png
 --w-r----- 1 harry users 2.7K Jan 4 07:32 frog.png
 ```
-
-
-# Regex
-
-```
-abc…	Letters
-123…	Digits
-\d	Any Digit
-\D	Any Non-digit character
-.	Any Character
-\.	Period
-[abc]	Only a, b, or c
-[^abc]Not a, b, nor c
-[a-z]	Characters a to z
-[0-9]	Numbers 0 to 9
-\w	Any Alphanumeric character
-\W	Any Non-alphanumeric character
-{m}	m Repetitions
-{m,n}	m to n Repetitions
-*	Zero or more repetitions
-+	One or more repetitions
-?	Optional character
-\s	Any Whitespace
-\S	Any Non-whitespace character
-^…$	Starts and ends
-(…)	Capture Group
-(a(bc)) Capture Sub-group
-(.*)	Capture all
-(abc|def) Matches abc or def
-```
-
-# References
-
-* [Ryans Tutorials](https://ryanstutorials.net/linuxtutorial/)
-* [RegexOne](https://regexone.com//)
