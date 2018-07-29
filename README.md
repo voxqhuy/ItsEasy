@@ -1,8 +1,16 @@
+# Fast Tutorials for ... everything
+
+###### Favored audience: sexy Geeks
 This is my collection of quick tutorials for popular developers' tools.  
 I personally edit and summarize to keep the content as concise as possible.  
 *(**Suggestions** are appreciated; **contributions** are more than welcomed)*
 
-# **Linux**
+## Table of Contents
+
+* [Linux](#Linux)
+* [Regex](#Regex)
+
+## Linux
 ```
 1. Commands:
 + Navigation
@@ -63,8 +71,13 @@ mv [options] <source> <destination>
 (mv foo2 backups/foo3 = We moved the directory foo2 into the directory backups and renamed it as foo3)
 (mv barney backups/ = We moved the file barney into backups. As we did not provide a destination name, it kept the same name.)
 
-
-2. Rules:
+2. Permission
+ls -l [path]
+      To view permissions for a file we use the long listing option for the command ls
+Ex:   
+drwxr-xr-x 1 voxqhuy voxqhuy 512 Jul 28 01:16 voxqhuy
+      
+3. Rules:
 Case sensitive. No Undo. Tab for suggesting. No mouse.
 Space
       'Holiday Photos' or Holiday\ Photos
@@ -75,7 +88,7 @@ shorthand
 longhand
       ls --all
 
-3. Vi Text Editor
+4. Vi Text Editor
 vi <file>
       start vi
 cat <file>
