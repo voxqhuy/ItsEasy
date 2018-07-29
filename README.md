@@ -10,10 +10,10 @@ I personally edit and summarize to keep the content as concise as possible.
 - [Linux](#linux)
 - [Regex](#regex)
 
-## Linux
+# Linux
 
 
-### Basic
+## Basic
 
 * Navigation
 ```
@@ -57,7 +57,7 @@ man -k <search term>
 ```
 '/' <search term> enter
 ```
-Pres key **n** for search next  
+Press key **n** for search next  
 
 * Paste something  
 **Right mouse click**
@@ -68,21 +68,21 @@ Key **q**
 * Others
 
 Asterisk **\***  represents zero or more characters. 
-Example: 
+*Example:*
 ```
 ls b*
 barry.txt blah.txt bob  
 ```
 
 Question mark **\?**  represents a single character.      
-Example: 
+*Example:* 
 ```
 ls ?i* 
 firstfile video.mpeg  
 ```
 
 Brackets **[]**   represents a range of characters.   
-Example: 
+*Example:* 
 ```
 ls [sv]*  
 secondfile video.mpeg
@@ -91,7 +91,7 @@ foo1 foo2 foo3
 ```
 
 
-### File manipulation
+## File manipulation
 
 * Creating a directory
 ```
@@ -103,23 +103,23 @@ mkdir [options] <Directory>
 rmdir [options] <Directory> 
 ```
  
-Options: 
+**Options:** 
 Make parent directories as needed  
 ```
 -p
 ```
-Example:  
+*Example:*  
 ```
 mkdir -p abc/hello
 ```
-This will create a folder 'abc' and then the file 'hello'  
+*This will create a folder 'abc' and then the file 'hello'*
 
 
-Show what the command is doing
++ Show what the command is doing
 ```
 -v
 ```
-Example:
+*Example:*
 ```
 mkdir -pv voxqhuy/foo
 mkdir: created directory 'voxqhuy/foo'
@@ -144,7 +144,8 @@ touch [options] <filename>
 ```
 cp [options] <source> <destination> 
 ```
-If the destination is to a file, it will create a copy of the source but name the copy the filename specified in destination. If we provide a directory as the destination then it will copy the file into that directory and the copy will have the same name as the source.
+*If the destination is to a file, it will create a copy of the source but name the copy the filename specified in destination.*  
+*If we provide a directory as the destination then it will copy the file into that directory and the copy will have the same name as the source.*
 
 * Copying a Directory
 ```
@@ -156,18 +157,18 @@ cp -r <source> <destination>
 ```
 mv [options] <source> <destination>
 ```
-Example:  
+*Example:*  
 ```
 mv foo2 backups/foo3
 ```
-We moved the directory foo2 into the directory backups and renamed it as foo3
+*We moved the directory foo2 into the directory backups and renamed it as foo3.*
 ```
 mv barney backups/
 ```
-We moved the file barney into backups. As we did not provide a destination name, it kept the same name.
+*We moved the file barney into backups. As we did not provide a destination name, it kept the same name.*
 
 
-### Permission
+## Permission
 
 * To view permissions for a file we use the long listing option **-l** for the command ls
 ```
@@ -175,9 +176,9 @@ ls -l [path]
 drwxr-xr-x 1 voxqhuy voxqhuy 512 Jul 28 01:16 voxqhuy
 ```
       
-### General rules:
+## General rules:
 
-Case sensitive. No Undo. Tab for suggesting. No mouse.
+**Case sensitive. No Undo. Tab for suggesting. No mouse.**
 * File names with spaces  
 ```
 Holiday Photos
@@ -206,45 +207,84 @@ ls --all
 ```
 
 
-### Vi Text Editor
+## Vi Text Editor
+* Start Vi
+```
 vi <file>
-      start vi
+```
+ 
+* View small files
+```
 cat <file>
-      view small files
+```
+
+* View big files    
+```
 less <file>
-      view big files     SpaceBar=forward a page;  b=back a page; q=quit
-'i'
-      insert
-Esc
-      escape
-ZZ 
-      Save and exit
-:q!
-      discard all changes, since the last save, and exit
-:w
-      save file but don't exit
+```
+*Usages:*
+**SpaceBar** forward a page  
+Key **b** back a page  
+Key **q** quit
+
+### Insert mode
+* Enable Insert mode
+Key **i**
+
+* Escape Insert mode (generally a no-harm key in Vi)
+Key **Esc**
+
+### Edit mode
+* Save and exit
+```
+ZZ
+```
+or
+```
 :wq
-      again, save and exit
+```
+
+* Discard all changes, since the last save, and exit
+```
+:q!
+```
+
+* Save file but don't exit
+```
+:w
+```
+
+* Delete a character
+```
 x
-      delete a character
+```
+
+* Delete a line
+```
 dd
-      delete a line
+```
+
+* Undo (keep pressing to keep undoing)
+```
 u
-      undo (keep pressing to keep undoing)
+```
+
+* Undo all changes
+```
 U
-      undo all changes
-      
-++ Navigating in Vi: (Type **:set nu** in edit mode to enable line numbers)
-Arrow keys - move the cursor around
-^ (caret) - move cursor to beginning of current line
-$ - move cursor to end of the current line
-{ - move backward one paragraph
-} - move forward one paragraph
+```
+       
+### Navigating in Vi   
+(Type **:set nu** in edit mode to enable line numbers)  
+
+**Arrow keys** - move the cursor around  
+**^** (caret) - move cursor to beginning of current line  
+**$** - move cursor to end of the current line  
+**{** - move backward one paragraph  
+**}** - move forward one paragraph  
 
 
-
-
-## Regex
+# Regex
 
 ```
 abc…	Letters
@@ -273,7 +313,7 @@ abc…	Letters
 (abc|def) Matches abc or def
 ```
 
-## References
+# References
 
 * [Ryans Tutorials](https://ryanstutorials.net/linuxtutorial/)
 * [RegexOne](https://regexone.com//)
