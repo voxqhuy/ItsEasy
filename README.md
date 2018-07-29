@@ -7,8 +7,8 @@ I personally edit and summarize to keep the content as concise as possible.
 
 ## Table of Contents
 
-* [Linux](#Linux)
-* [Regex](#Regex)
+- [Linux](#linux)
+- [Regex](#regex)
 
 ## Linux
 ```
