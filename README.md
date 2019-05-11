@@ -7,7 +7,7 @@ I personally edit and summarize to keep the content as concise as possible.
 
 ## Table of Contents
 
-- [Linux](https://github.com/kohnewlife/ItsEasy/tree/master/Linux)
+- [Linux](https://github.com/kohnewlife/ItsEasy/tree/master/Linux/README.md)
 - [Regex](https://github.com/kohnewlife/ItsEasy/blob/master/Regex/README.md)
 - [Github](https://github.com/kohnewlife/ItsEasy/tree/master/Github/README.md)
 
