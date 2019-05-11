@@ -9,6 +9,7 @@ I personally edit and summarize to keep the content as concise as possible.
 
 - [Linux](https://github.com/kohnewlife/ItsEasy/tree/master/Linux)
 - [Regex](https://github.com/kohnewlife/ItsEasy/blob/master/Regex/README.md)
+- [Github](https://github.com/kohnewlife/ItsEasy/tree/master/Github/README.md)
 
 # References
 
