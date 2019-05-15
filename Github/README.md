@@ -50,3 +50,7 @@ git remote add origin https://github.com/kohnewlife/CPTR302-Firmware.git
 (git push -u origin master)
 
 
+Move local branch to a different commit, delete pushed commits on origin and make origin point to local
+git checkout 1b990e54d6a53bac5936b77adf663e1bd3d4ff81
+git branch -f development HEAD
+git push origin +development
