@@ -26,3 +26,9 @@ abc…	Letters
 (.*)	Capture all
 (abc|def) Matches abc or def
 ```
+
+Examples:
+1. To match US phone numbers
+```
+let pattern = “[0–9]{3}-[0–9]{3}-[0–9]{4}”
+```
