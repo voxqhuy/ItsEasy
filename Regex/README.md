@@ -8,7 +8,7 @@ abc…	Letters
 .	Any Character
 \.	Period
 [abc]	Only a, b, or c
-[^abc]Not a, b, nor c
+[^abc]  Not a, b, nor c
 [a-z]	Characters a to z
 [0-9]	Numbers 0 to 9
 \w	Any Alphanumeric character
@@ -17,7 +17,7 @@ abc…	Letters
 {m,n}	m to n Repetitions
 *	Zero or more repetitions
 +	One or more repetitions
-?	Optional character
+?	Optional character (0 or 1 occurrence)
 \s	Any Whitespace
 \S	Any Non-whitespace character
 ^…$	Starts and ends
@@ -28,7 +28,28 @@ abc…	Letters
 ```
 
 Examples:
-1. To match US phone numbers
+1. General cases
+
+This expression | matches this | but not this
+--- | --- | ---
+a | a | b
+\\\.\\\* | .* | dog
+100 | 100 | ABCDEFG
+.art | dart, cart, tart | art, hurt, dark
+a+b | ab, aaab | b baa
+a\*b | b, ab, aaab | daa
+.\*cat | cat, 9393cat, the old cat,	c7sb@#puiercat | dog
+a\[n\]? h | a herb, an herb | ann hat
+(ab)\*c | abc, ababababc | ababab, ababd
+(.a)+b | xab, ra5afab | b, aagb
+\[aeiou\]\[0-9\] | a6, i3, u2 | ex, 9a, $6
+\[^cfl\]og | dog, bog | cog, fog
+END\[.\] | END. | END;, END DO, ENDIAN
+^(the cat).+ | the cat runs | see the cat run
+.+(the cat)$ | watch the cat | the cat eats
+
+
+2. To match US phone numbers
 ```
 let pattern = “[0–9]{3}-[0–9]{3}-[0–9]{4}”
 ```
