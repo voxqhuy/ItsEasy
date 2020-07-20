@@ -27,8 +27,8 @@ abc…	Letters
 (abc|def) Matches abc or def
 ```
 
-Examples:
-1. General cases
+# Examples:
+## 1. General cases
 
 This expression | matches this | but not this
 --- | --- | ---
@@ -49,7 +49,7 @@ END\[.\] | END. | END;, END DO, ENDIAN
 .+(the cat)$ | watch the cat | the cat eats
 
 
-2. To match US phone numbers
+## 2. To match US phone numbers
 ```
 let pattern = “[0–9]{3}-[0–9]{3}-[0–9]{4}”
 ```
