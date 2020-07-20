@@ -28,7 +28,7 @@ abc…	Letters
 ```
 
 # Examples:
-### 1. Simple cases
+### 1. Quick cheat sheet
 
 This expression | matches this | but NOT this
 --- | --- | ---
