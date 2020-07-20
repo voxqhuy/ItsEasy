@@ -27,6 +27,9 @@ abc…	Letters
 (abc|def) Matches abc or def
 ```
 
+The 12 special characters (need to be escaped):
+the backslash \, the caret ^, the dollar sign $, the period or dot ., the vertical bar or pipe symbol |, the question mark ?, the asterisk or star *, the plus sign +, the opening parenthesis (, the closing parenthesis ), the opening square bracket \[, and the opening curly brace {
+
 # Examples:
 ### 1. Quick cheat sheet
 
