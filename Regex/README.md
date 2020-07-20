@@ -28,9 +28,9 @@ abc…	Letters
 ```
 
 # Examples:
-## 1. General cases
+## 1.
 
-This expression | matches this | but not this
+This expression | matches this | but NOT this
 --- | --- | ---
 a | a | b
 \\\.\\\* | .* | dog
