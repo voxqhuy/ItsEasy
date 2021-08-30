@@ -20,7 +20,7 @@ abc…	Letters
 ?	Optional character (0 or 1 occurrence)
 \s	Any Whitespace
 \S	Any Non-whitespace character
-^…$	Starts and ends
+^…$	Line starts and line ends
 (…)	Captured Group
 (a(bc)) Captured Sub-group
 (.*)	Captured all
