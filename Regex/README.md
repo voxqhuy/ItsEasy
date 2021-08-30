@@ -21,9 +21,9 @@ abc…	Letters
 \s	Any Whitespace
 \S	Any Non-whitespace character
 ^…$	Starts and ends
-(…)	Capture Group
-(a(bc)) Capture Sub-group
-(.*)	Capture all
+(…)	Captured Group
+(a(bc)) Captured Sub-group
+(.*)	Captured all
 (abc|def) Matches abc or def
 ```
 
@@ -67,3 +67,6 @@ END\[.\] | END. | END;, END DO, ENDIAN
 ```
 let pattern = “[0–9]{3}-[0–9]{3}-[0–9]{4}”
 ```
+
+### 3. Examples of captured groups
+https://www.jetbrains.com/help/go/tutorial-finding-and-replacing-text-using-regular-expressions.html#capture_groups_and_backreference
