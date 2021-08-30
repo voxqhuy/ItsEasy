@@ -24,7 +24,10 @@ abc…	Letters
 (…)	Captured Group
 (a(bc)) Captured Sub-group
 (.*)	Captured all
-(abc|def) Matches abc or def
+
+For OR
+(abc|def) Matches abc or def, but also capturing
+(?:abc|def) Matches abc or def, without capturing
 ```
 
 The 12 special characters (need to be escaped):
